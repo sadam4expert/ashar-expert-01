@@ -17,6 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       background: linear-gradient(135deg, #0f172a, #1e293b);
       font-family: Arial, sans-serif;
       overflow: hidden;
@@ -26,8 +27,25 @@
       color: white;
       font-size: 4rem;
       font-weight: bold;
+      margin-bottom: 30px;
       animation: glow 2s infinite alternate,
                  float 3s ease-in-out infinite;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      background: #38bdf8;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+    }
+
+    .btn:hover {
+      background: #f472b6;
+      transform: scale(1.08);
     }
 
     @keyframes glow {
@@ -56,6 +74,13 @@
 </head>
 
 <body>
-  <div class="welcome">Welcome to GitHub Pages 🚀</div>
+
+  <div class="welcome">Welcome to My GitHub Page 🚀</div>
+
+  <!-- Assignment Link -->
+  <a class="btn" href="arham1.html">
+    View My Assignment
+  </a>
+
 </body>
 </html>
