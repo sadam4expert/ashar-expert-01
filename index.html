@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Animation</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .welcome {
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      animation: glow 2s infinite alternate,
+                 float 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #38bdf8,
+                     0 0 20px #38bdf8;
+      }
+      to {
+        text-shadow: 0 0 20px #f472b6,
+                     0 0 40px #f472b6;
+      }
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="welcome">Welcome to GitHub Pages 🚀</div>
+</body>
+</html>
